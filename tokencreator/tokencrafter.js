@@ -3,13 +3,14 @@ import { createMint, getOrCreateAssociatedTokenAccount, mintTo } from "@solana/s
 
 let wallet = null; // Store connected wallet
 
-// 1️⃣ Connect Phantom Wallet
+// 🔗 Connect Phantom Wallet
 async function connectWallet() {
     if (window.solana && window.solana.isPhantom) {
         try {
             const response = await window.solana.connect();
             wallet = response.publicKey;
-            document.getElementById("walletAddress").innerText = "Connected: " + wallet.toString();
+            document.getElementById("walletAddress").innerText = "✅ Connected: " + wallet.toString();
+            document.getElementById("connectBtn").innerText = "✅ Wallet Connected";
         } catch (err) {
             console.error("Wallet connection failed!", err);
         }
@@ -18,7 +19,7 @@ async function connectWallet() {
     }
 }
 
-// 2️⃣ Token Creation Function
+// ⚡ Token Creation Function
 async function createToken(event) {
     event.preventDefault();
     
@@ -31,6 +32,8 @@ async function createToken(event) {
     const symbol = document.getElementById("symbol").value;
     const decimals = parseInt(document.getElementById("decimals").value);
     const supply = parseInt(document.getElementById("supply").value);
+
+    document.getElementById("status").innerText = "⏳ Processing...";
 
     // Connect to Solana
     const connection = new Connection("https://api.mainnet-beta.solana.com", "confirmed");
@@ -73,5 +76,5 @@ async function createToken(event) {
     }
 }
 
-// 3️⃣ Attach Event Listener
+// 🔥 Attach Event Listener
 document.getElementById("tokenForm").addEventListener("submit", createToken);
