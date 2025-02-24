@@ -13,8 +13,11 @@
     <header>
         <nav>
             <div class="logo">
-                <span class="neon-text">Brois</span>
-                <span class="cyber-text">Coding</span>
+                <div class="logo-text">
+                    <span class="neon-text">Br<span class="highlight">o</span></span>
+                    <span class="neon-text">Is</span>
+                    <span class="cyber-text">C<span class="highlight">o</span>ding</span>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -43,23 +46,41 @@
             <div class="services-grid">
                 <div class="service-card">
                     <div class="card-inner">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-globe"></i>
                         <h3>Web Development</h3>
-                        <p>Custom websites built with modern technologies</p>
+                        <p>Custom responsive websites with modern frameworks like React, Vue.js, and Angular. SEO optimized and blazing fast performance.</p>
+                        <ul class="service-features">
+                            <li>Custom Design</li>
+                            <li>E-commerce Solutions</li>
+                            <li>CMS Integration</li>
+                            <li>API Development</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="card-inner">
                         <i class="fas fa-mobile-alt"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Mobile-first approach for all devices</p>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and cross-platform mobile applications for iOS and Android using React Native and Flutter.</p>
+                        <ul class="service-features">
+                            <li>iOS Development</li>
+                            <li>Android Development</li>
+                            <li>Cross-platform Apps</li>
+                            <li>App Store Publishing</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="card-inner">
-                        <i class="fas fa-cogs"></i>
+                        <i class="fas fa-code"></i>
                         <h3>Custom Solutions</h3>
-                        <p>Tailored coding solutions for your needs</p>
+                        <p>Tailored software solutions for your specific business needs.</p>
+                        <ul class="service-features">
+                            <li>Backend Development</li>
+                            <li>Database Design</li>
+                            <li>Cloud Solutions</li>
+                            <li>System Integration</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -68,15 +89,42 @@
         <section id="portfolio" class="portfolio">
             <h2 class="section-title">Portfolio</h2>
             <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="path/to/smartpi-thumbnail.jpg" alt="SmartPi Project">
+                <div class="portfolio-item active">
+                    <div class="portfolio-preview">
+                        <iframe src="https://smartpi.xyz" title="SmartPi.xyz Preview"></iframe>
+                        <div class="preview-overlay"></div>
+                    </div>
                     <div class="portfolio-overlay">
                         <h3>SmartPi.xyz</h3>
-                        <p>IoT Solutions Platform</p>
-                        <a href="https://smartpi.xyz" target="_blank" class="cyber-button">Visit Site</a>
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>IoT</span>
+                            <span>API</span>
+                        </div>
+                        <p>IoT Solutions Platform with real-time monitoring and control capabilities.</p>
+                        <div class="portfolio-buttons">
+                            <a href="https://smartpi.xyz" target="_blank" class="cyber-button visit-btn">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Visit Live Site</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more portfolio items here -->
+                <div class="portfolio-item coming-soon">
+                    <div class="portfolio-preview">
+                        <div class="preview-placeholder">
+                            <i class="fas fa-rocket"></i>
+                            <span>More Projects Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Future Projects</h3>
+                        <p>Exciting new projects are in development. Stay tuned!</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
