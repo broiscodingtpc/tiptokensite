@@ -728,3 +728,81 @@ footer {
     }
 }
 
+.preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--cyber-green);
+    padding: 2rem;
+}
+
+.preview-placeholder.trench-bot {
+    background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
+    border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 15px var(--neon-purple);
+}
+
+.preview-placeholder.trench-bot i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--neon-purple);
+    animation: float 3s ease-in-out infinite;
+}
+
+.info-btn {
+    background: transparent;
+    border: 2px solid var(--neon-purple);
+    color: var(--neon-purple);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.info-btn:hover {
+    background: var(--neon-purple);
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px var(--neon-purple);
+    transform: translateY(-2px);
+}
+
+.info-btn i {
+    font-size: 1.2rem;
+}
+
+.telegram-btn {
+    background: transparent;
+    border: 2px solid #0088cc;
+    color: #0088cc;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.telegram-btn:hover {
+    background: #0088cc;
+    color: var(--dark-bg);
+    box-shadow: 0 0 15px #0088cc;
+    transform: translateY(-2px);
+}
+
+.telegram-btn i {
+    font-size: 1.2rem;
+}
+
